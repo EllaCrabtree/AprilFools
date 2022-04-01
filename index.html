@@ -1,10 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title> APRIL FOOLS </title>
+    <title> Problem Set Change </title>
+    <link rel="stylesheet" href="main.css">
+    <script>
+      function getPranked() {
+        document.getElementById("getRolled").hidden = !document.getElementById("getRolled").hidden;
+        document.getElementById("1").hidden = !document.getElementById("1").hidden;
+        document.getElementById("2").hidden = !document.getElementById("2").hidden;
+        document.getElementById("3").hidden = !document.getElementById("3").hidden;
+        document.getElementById("4").hidden = !document.getElementById("4").hidden;
+        document.getElementById("5").hidden = !document.getElementById("5").hidden;
+        document.getElementById("6").hidden = !document.getElementById("6").hidden;
+        document.getElementById("7").hidden = !document.getElementById("7").hidden;
+        document.getElementById("8").hidden = !document.getElementById("8").hidden;
+        document.getElementById("aprlfls").hidden = !document.getElementById("aprlfls").hidden;
+        document.getElementById("rick").hidden = !document.getElementById("rick").hidden;
+        document.getElementById("body").style = "background-image: none";
+        document.getElementById("rick").play();
+        document.getElementById("body").removeAttribute("onclick");
+        document.getElementById("body").removeAttribute("onkeydown");
+      }
+    </script>
   </head>
-  
-  
-  <body>
+  <body id="body" onclick="getPranked()" onkeydown="getPranked()">
+    
+    <div class="parent" id="getRolled">
+      <div id="1" class="child"> <img style="transform: rotate(-20deg);" src="./images/whatTheDogDoing.png" height="200px" width="300px"/> </div>
+      <div id="2" class="child"> <img src="./images/DaBhatty.jpeg" height="200px" width="300px"/></div>
+      <div id="3" class="child"> <img style="transform: rotate(20deg);" src="./images/judgejudySandeep.png" height="200px" width="300px"/> </div>  
+      <div id="4" class="child"> <img src="./images/darthBhatt.jpg" height="200px" width="300px"/></div>
+      <div id="aprlfls" class="child">
+        <img src="./images/Sandeep.jpeg" height=100vh width=100vw/>
+      </div>
+      <div id="5" class="child"> <img src="./images/sandeep space nine.jpg" height="200px" width="300px"/> </div>  
+      <div id="6" class="child"> <img style="transform: rotate(20deg);" src="./images/discreteIsWhatIteach(cropped).jpg" height="200px" width="300px"/> </div>
+      <div id="7" class="child"> <img src="./images/moreSandeep.jpg" height="200px" width="300px"/> </div>
+      <div id="8" class="child"> <img style="transform: rotate(-20deg);" src="./images/darthSandeep.jpg" height="200px" width="300px"/> </div>
+    </div>
+
+    <div>
+      
+    </div>
+
+    <video hidden id="rick" width="100%" height="100%" autoplay="autoplay" controls>
+      <source src="./images/aprlfls.mp4" type="video/mp4">
+      Video couldn't play
+    </video>
   </body>
 </html>
