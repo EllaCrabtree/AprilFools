@@ -17,14 +17,18 @@
         document.getElementById("aprlfls").hidden = !document.getElementById("aprlfls").hidden;
         document.getElementById("rick").hidden = !document.getElementById("rick").hidden;
         document.getElementById("body").style = "background-image: none";
+        document.getElementById("title1").textContent = "APRIL FOOLED AGAIN!!!!"
+        document.getElementById("title2").hidden = !document.getElementById("title2").hidden
         document.getElementById("rick").play();
         document.getElementById("body").removeAttribute("onclick");
         document.getElementById("body").removeAttribute("onkeydown");
+        
       }
     </script>
   </head>
   <body id="body" onclick="getPranked()" onkeydown="getPranked()">
-    
+    <h1 id="title1"> APRIL FOOLS!!! How do you feel? Pranked???</h1>
+    <h2 id="title2" style="background-color: rgb(29, 248, 219)"> Hope you're having a happy Friday!  Click on Bhatt's head to jump to the extra resources!</h2>
     <div class="parent" id="getRolled">
       <div id="1" class="child"> <img style="transform: rotate(-20deg);" src="./images/whatTheDogDoing.png" height="200px" width="300px"/> </div>
       <div id="2" class="child"> <img src="./images/DaBhatty.jpeg" height="200px" width="300px"/></div>
